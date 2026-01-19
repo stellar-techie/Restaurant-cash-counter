@@ -80,3 +80,7 @@ Out-of-stock item handling
 
 📌 Note
 This project was built as a learning-focused beginner project to strengthen core JavaScript concepts without relying on frameworks.
+
+
+
+
