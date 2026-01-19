@@ -38,16 +38,11 @@ No frameworks or external libraries are used.
 
 ## 📂 Project Structure
 
-restaurant-cash-counter/
-│
-├── index.html
-├── style.css
-└── script.js
+restaurant-cash-counter
+ --index.html
+ --style.css
+ --script.js
 
-yaml
-Copy code
-
----
 
 ## ▶️ How to Run
 
