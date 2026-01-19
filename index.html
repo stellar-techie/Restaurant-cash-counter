@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Cash Counter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🍽️ Restaurant Cash Counter</h1>
+            <p class="subtitle">Place your order and generate a bill</p>
+        </header>
+
+        <main>
+            <div class="order-section">
+                <h2>Create Order</h2>
+                
+                <!-- Item Selection -->
+                <div class="form-group">
+                    <label for="itemSelect">Select Item:</label>
+                    <select id="itemSelect">
+                        <option value="">-- Choose an item --</option>
+                    </select>
+                </div>
+
+                <!-- Customization Options -->
+                <div id="customizationOptions" class="customization-section">
+                </div>
+
+                <!-- Toppings Section -->
+                <div id="toppingsSection" class="toppings-section" style="display: none;">
+                    <label>Toppings:</label>
+                    <div id="toppingsContainer" class="toppings-container">
+                    </div>
+                </div>
+
+                <!-- Order Summary -->
+                <div class="order-summary">
+                    <h3>Order Summary</h3>
+                    <div id="orderDetails" class="order-details">
+                        <p>No item selected</p>
+                    </div>
+                    <div class="total-section">
+                        <strong>Total: ₹<span id="totalPrice">0.00</span></strong>
+                    </div>
+                </div>
+
+                <div class="action-buttons">
+                    <button id="generateBillBtn" class="btn btn-primary" disabled>Generate Bill</button>
+                    <button id="resetOrderBtn" class="btn btn-secondary">Reset Order</button>
+                </div>
+            </div>
+
+            <!-- Bill Display -->
+            <div class="bill-section">
+                <h2>Bill</h2>
+                <div id="billDisplay" class="bill-display">
+                    <p class="no-bill">No bill generated yet</p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
